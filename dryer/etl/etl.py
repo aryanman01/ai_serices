@@ -1,6 +1,6 @@
 import json
 
-f = open('data.json')
-data = json.load(f)
+with open('config1.json') as json_file:
+    data = json.load(json_file)
 
 print("hello world", data["env"])
